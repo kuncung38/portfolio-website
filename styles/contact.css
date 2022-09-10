@@ -1,9 +1,11 @@
 #contact {
     display:flex;
-    height: 100vh;
+    height: 60vh;
     flex-direction: column;
     justify-content: center;
-    margin-top:2.5rem;;
+    
+    margin-top: 45rem;
+    scroll-margin-top: 3rem;
 }
 
 .contact-title {

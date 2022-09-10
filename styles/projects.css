@@ -3,8 +3,9 @@
     height: 100vh;
     flex-direction: column;
     justify-content: start;
+    
     margin-top:10rem;
-    margin-bottom: 20rem;
+    margin-bottom: 40rem;
     scroll-margin-top: 5rem;
 }
 
