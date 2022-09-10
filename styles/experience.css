@@ -1,0 +1,78 @@
+#experience {
+    display:flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:2.5rem;;
+}
+
+.experience-title {
+    display:flex;
+    align-items: center;
+    color:var(--secondary-gray);
+    font-size: var(--text-xl);
+    font-weight: 600;
+}
+
+.experience-container {
+    display:grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin-top:2.5rem;
+}
+
+.experience-card {
+    border: 1px solid #374151;
+    cursor: pointer;
+    border-radius:0.3rem;
+    padding: 2.5rem 2.5rem 2rem;
+}
+
+.experience-role {
+    color:var(--secondary-gray);
+    font-size: var(--text-lg);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.experience-company {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.experience-date {
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.experience-about {
+    list-style-position: inside;
+}
+
+.experience-about > *+* {
+    margin-top: 1rem;
+}
+
+.experience-about > li::marker {
+    color: var(--primary-green);
+}
+
+
+@media (min-width:640px) {
+    .experience-title {
+        font-size: var(--text-2xl);
+    }
+}
+
+@media (min-width:768px) {
+    .experience-title {
+        font-size: var(--text-3xl);
+    }
+    
+}
+
+@media(min-width: 1024px) {
+    #experience {
+        margin-bottom: 14rem;
+    }
+}

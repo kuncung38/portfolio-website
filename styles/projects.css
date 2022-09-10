@@ -1,0 +1,151 @@
+#projects {
+    display:flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: start;
+    margin-top:10rem;
+    margin-bottom: 20rem;
+    scroll-margin-top: 5rem;
+}
+
+.projects-title {
+    display:flex;
+    align-items: center;
+    color:var(--secondary-gray);
+    font-size: var(--text-xl);
+    font-weight: 600;
+}
+
+.projects-cards {
+    display:grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin-top:2.5rem;
+}
+
+.projects-card {
+    border: 1px solid #374151;
+    border-radius:0.5rem;
+    
+    /* cursor: pointer; */
+    position: relative;
+    list-style-type: none;
+}
+
+.card-container {
+    padding: 2.5rem 2.5rem 2rem;
+}
+
+
+.card-title {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--secondary-gray);
+    margin-bottom: 0.625rem;
+    transition: 0.3s ease-in-out;
+}
+
+.card-title:hover {
+    color: var(--primary-green);
+    font-size: var(--text-2xl); 
+}
+
+
+.card-description {
+    padding: 1.25rem 0;
+}
+
+
+.card-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--text-sm);
+    font-weight: 300;
+    margin:0.625rem 0;
+    padding-left: 0%;
+}
+
+.card-technologies > li {
+    list-style-type: none;
+    margin: 0 0.625rem 0.25rem 0;
+}
+
+
+.card-links {
+    display:flex;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+
+.card-links > a {
+    height: 1.25rem;
+    width: 1.25rem;
+    color:var(--secondary-gray);
+    transition: 0.3s;
+}
+
+.card-links > a:hover {
+    height: 2rem;
+    width: 2rem;
+    color:var(--primary-green);
+}
+
+
+.card-image {
+    position:absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 10%;
+    z-index: -1;
+}
+
+.card-image > img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+
+.fc > img {
+    object-fit:fill ;
+    width: 100%;
+    height: 100%;
+}
+
+
+.img2 {
+    display: none;
+}
+
+
+@media (min-width:640px) {
+    .projects-title {
+        font-size: var(--text-2xl);
+    }
+}
+
+@media (min-width:768px) {
+    .projects-title {
+        font-size: var(--text-3xl);
+    }
+
+    .img1 {
+        display:none;
+    }
+
+    .img2 {
+        display:block;
+    }
+    
+}
+
+@media(min-width: 1024px) {
+    #projects {
+        margin-bottom: 14rem;
+    }
+
+    .projects-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+}

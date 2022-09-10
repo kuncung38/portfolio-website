@@ -1,0 +1,127 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 3rem;
+    scroll-margin-top: 10rem;
+}
+
+.home-title {
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+}
+
+.home-name {
+    color: var(--secondary-gray);
+    font-size: var(--text-4xl);
+    font-weight: 600;
+}
+
+.home-subtitle {
+    margin-top: 0.625rem;
+    font-size: var(--text-3xl);
+    font-weight: 600;
+}
+
+.home-description {
+    margin-top: 1.25rem;
+    font-size: var(--text-lg);
+    max-width: 32rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+@media (min-width:640px) {
+    .home-name {
+        font-size: var(--text-5xl);
+    }
+
+    .home-subtitle {
+        font-size: var(--text-4xl);
+    }
+}
+
+/* Large */
+@media (min-width:768px) {
+    .home-title {
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+      
+    .home-name {
+        margin-top: 0rem;
+        margin-bottom: 0.25rem;
+        font-size: var(--text-7xl);
+        
+    }
+
+    .home-subtitle {
+        margin-bottom: 1rem;
+        font-size: var(--text-6xl);
+    }
+}
+
+
+/* For Small Laptop view */
+@media (min-width:1024px) {
+    #home {
+        height: 100vh;
+    }
+    
+    .home-title {
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        font-size: var(--text-3xl);
+    }
+
+    .home-name {
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        font-size: var(--text-8xl);   
+    }
+
+    .home-subtitle {
+        margin-bottom: 3rem;
+        font-size: var(--text-6xl);
+    }
+
+    .home-description {
+        font-size: var(--text-xl);
+        max-width: 37rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+
+/* For large Laptop view */
+@media (min-width:1280px) {
+    #home {
+        height: 90vh;
+    }
+    
+    .home-title {
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+        font-size: var(--text-3xl);
+    }
+
+    .home-name {
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        font-size: var(--text-8xl);   
+    }
+
+    .home-subtitle {
+        margin-bottom: 3rem;
+        font-size: var(--text-7xl);
+    }
+
+    .home-description {
+        font-size: var(--text-xl);
+        max-width: 40rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
