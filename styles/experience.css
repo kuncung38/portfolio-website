@@ -66,6 +66,10 @@
 }
 
 @media (min-width:768px) {
+    #experience {
+        margin-top: 20rem;
+    }
+    
     .experience-title {
         font-size: var(--text-3xl);
     }

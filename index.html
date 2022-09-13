@@ -30,7 +30,7 @@
             </a>
         </div>
 
-        <button class="mobile-navigator-container">
+        <!-- <button class="mobile-navigator-container">
             <svg class="menu-icon"  xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height=auto viewBox="0 0 512 512" fill="currentColor"
                 style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" 
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -42,7 +42,29 @@
                 <g><path  d="M 160.5,303.5 C 175.367,301.012 185.534,306.678 191,320.5C 193.982,335.376 188.482,345.543 174.5,351C 159.624,353.982 149.457,348.482 144,334.5C 141.146,319.533 146.646,309.199 160.5,303.5 Z M 164.5,320.5 C 162.856,321.316 161.69,322.65 161,324.5C 160.123,333.489 163.956,336.322 172.5,333C 176.517,324.532 173.85,320.365 164.5,320.5 Z"/></g>
                 <g><path  d="M 217.5,310.5 C 264.168,310.333 310.835,310.5 357.5,311C 366.482,315.473 369.649,322.64 367,332.5C 365.167,337 362,340.167 357.5,342C 310.833,342.667 264.167,342.667 217.5,342C 210.513,339.193 207.18,334.027 207.5,326.5C 207.302,318.885 210.635,313.551 217.5,310.5 Z"/></g>
             </svg>
-        </button>
+        </button> -->
+
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="link-name underline" 
+                        style="--color: var(--background-blue); --border-size: 3px;" href="index.html#about">
+                        About</a> </li>
+                <li ><a class="link-name underline" 
+                        style="--color: var(--background-blue); --border-size: 3px;" href="index.html#experience">
+                        Experience</a> </li>
+                <li ><a class="link-name underline" 
+                        style="--color: var(--background-blue); --border-size: 3px;" href="index.html#projects">
+                        Project</a> </li>
+                <li ><a class="link-name underline" 
+                        style="--color: var(--background-blue); --border-size: 3px;" href="index.html#contact">
+                        Contact Me</a> </li>
+
+                <li><a class="resume-link" href=#>Resume</a></li>
+            </ul>
+        </div>
 
         <nav class="navigation-container">
             <div class="link-container"><a class="link-name underline" 
@@ -61,6 +83,7 @@
             <div><a class="resume-link" href=#>Resume</a></div>
         </nav>
     </header>
+    <script src="index.js"></script>
       
 
 
