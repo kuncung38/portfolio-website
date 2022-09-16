@@ -1,4 +1,5 @@
-#contact {
+ /* -------------------- Contact---------------- */
+ #contact #contact-meme {
     display:flex;
     height: 60vh;
     flex-direction: column;
@@ -6,6 +7,10 @@
     
     margin-top: 45rem;
     scroll-margin-top: 3rem;
+}
+
+#contact-meme {
+    margin-top: 30rem;
 }
 
 .contact-title {
@@ -34,10 +39,15 @@
     font-size: var(--text-lg);
 }
 
+
 .contact-cta {
     margin-top: 4rem;
     font-family: 'Audiowide', cursive;
 
+}
+
+#contact-meme > .contact-container > .contact-cta {
+    margin-top: 2rem;
 }
 
 .contact-cta > a {

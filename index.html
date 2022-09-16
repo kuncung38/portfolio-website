@@ -8,20 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/first-second-section.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/meme.css">
 </head>
 
 <body>
-    <header>
+    <script src="index.js"></script>
+    <header id="navbar">
         <div class="main-logo-container">
-            <a href="index.html#home">
+            <a href="index.html">
                 <svg class="home-logo w-6 h-6" 
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
                     <path stroke-linecap="round" stroke-linejoin="round" 
@@ -30,312 +33,483 @@
             </a>
         </div>
 
-        <!-- <button class="mobile-navigator-container">
-            <svg class="menu-icon"  xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height=auto viewBox="0 0 512 512" fill="currentColor"
-                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" 
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g><path  d="M 235.5,49.5 C 306.822,44.9334 366.322,68.9334 414,121.5C 461.168,179.997 474.834,245.664 455,318.5C 432.167,388 386,434.167 316.5,457C 237.627,477.948 168.294,460.948 108.5,406C 52.4022,346.11 34.9022,276.276 56,196.5C 78.8333,127 125,80.8333 194.5,58C 208.082,54.0752 221.748,51.2418 235.5,49.5 Z M 254.5,81.5 C 329.077,84.96 382.91,119.96 416,186.5C 442.42,253.498 433.42,315.165 389,371.5C 342.731,421.812 285.897,440.979 218.5,429C 157.123,413.957 114.623,377.124 91,318.5C 67.2577,242.964 84.0911,178.13 141.5,124C 174.305,96.9315 211.972,82.7648 254.5,81.5 Z M 164.5,176.5 C 173.85,176.365 176.517,180.532 172.5,189C 163.956,192.322 160.123,189.489 161,180.5C 161.69,178.65 162.856,177.316 164.5,176.5 Z M 164.5,249.5 C 173.85,249.365 176.517,253.532 172.5,262C 163.956,265.322 160.123,262.489 161,253.5C 161.69,251.65 162.856,250.316 164.5,249.5 Z M 164.5,320.5 C 173.85,320.365 176.517,324.532 172.5,333C 163.956,336.322 160.123,333.489 161,324.5C 161.69,322.65 162.856,321.316 164.5,320.5 Z"/></g>
-                <g><path  d="M 160.5,159.5 C 175.367,157.012 185.534,162.678 191,176.5C 193.982,191.376 188.482,201.543 174.5,207C 159.624,209.982 149.457,204.482 144,190.5C 141.146,175.533 146.646,165.199 160.5,159.5 Z M 164.5,176.5 C 162.856,177.316 161.69,178.65 161,180.5C 160.123,189.489 163.956,192.322 172.5,189C 176.517,180.532 173.85,176.365 164.5,176.5 Z"/></g>
-                <g><path  d="M 217.5,167.5 C 264.168,167.333 310.835,167.5 357.5,168C 366.482,172.473 369.649,179.64 367,189.5C 365.167,194 362,197.167 357.5,199C 310.833,199.667 264.167,199.667 217.5,199C 210.513,196.193 207.18,191.027 207.5,183.5C 207.302,175.885 210.635,170.551 217.5,167.5 Z"/></g>
-                <g><path  d="M 160.5,232.5 C 175.367,230.012 185.534,235.678 191,249.5C 193.982,264.376 188.482,274.543 174.5,280C 159.624,282.982 149.457,277.482 144,263.5C 141.146,248.533 146.646,238.199 160.5,232.5 Z M 164.5,249.5 C 162.856,250.316 161.69,251.65 161,253.5C 160.123,262.489 163.956,265.322 172.5,262C 176.517,253.532 173.85,249.365 164.5,249.5 Z"/></g>
-                <g><path  d="M 217.5,239.5 C 264.168,239.333 310.835,239.5 357.5,240C 366.482,244.473 369.649,251.64 367,261.5C 365.167,266 362,269.167 357.5,271C 310.833,271.667 264.167,271.667 217.5,271C 210.513,268.193 207.18,263.027 207.5,255.5C 207.302,247.885 210.635,242.551 217.5,239.5 Z"/></g>
-                <g><path  d="M 160.5,303.5 C 175.367,301.012 185.534,306.678 191,320.5C 193.982,335.376 188.482,345.543 174.5,351C 159.624,353.982 149.457,348.482 144,334.5C 141.146,319.533 146.646,309.199 160.5,303.5 Z M 164.5,320.5 C 162.856,321.316 161.69,322.65 161,324.5C 160.123,333.489 163.956,336.322 172.5,333C 176.517,324.532 173.85,320.365 164.5,320.5 Z"/></g>
-                <g><path  d="M 217.5,310.5 C 264.168,310.333 310.835,310.5 357.5,311C 366.482,315.473 369.649,322.64 367,332.5C 365.167,337 362,340.167 357.5,342C 310.833,342.667 264.167,342.667 217.5,342C 210.513,339.193 207.18,334.027 207.5,326.5C 207.302,318.885 210.635,313.551 217.5,310.5 Z"/></g>
-            </svg>
-        </button> -->
-
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-menu">
-                <li><a class="link-name underline" 
+                <!-- Serious -->
+                <li class="serious"><a class="link-name underline" 
                         style="--color: var(--background-blue); --border-size: 3px;" href="index.html#about">
                         About</a> </li>
-                <li ><a class="link-name underline" 
+                <li class="serious"><a class="link-name underline" 
                         style="--color: var(--background-blue); --border-size: 3px;" href="index.html#experience">
                         Experience</a> </li>
-                <li ><a class="link-name underline" 
+                <li class="serious"><a class="link-name underline" 
                         style="--color: var(--background-blue); --border-size: 3px;" href="index.html#projects">
                         Project</a> </li>
-                <li ><a class="link-name underline" 
+                <li class="serious"><a class="link-name underline" 
                         style="--color: var(--background-blue); --border-size: 3px;" href="index.html#contact">
                         Contact Me</a> </li>
+                
+                <!-- Meme -->
+                <li class="meme"><a class="link-name underline" 
+                        style="--color: var(--background-blue); --border-size: 3px;" href="index.html#about-meme">
+                        About</a> </li>
+                <li class="meme"><a class="link-name underline" 
+                        style="--color: var(--background-blue); --border-size: 3px;" href="index.html#skill-meme">
+                        skill</a> </li>
+                <li class="meme"><a class="link-name underline" 
+                        style="--color: var(--background-blue); --border-size: 3px;" href="index.html#contact-meme">
+                        Contact Me</a> </li>
 
-                <li><a class="resume-link" href=#>Resume</a></li>
+                <li class="meme"><a class="resume-link" href=#>Resume</a></li>
             </ul>
         </div>
 
         <nav class="navigation-container">
-            <div class="link-container"><a class="link-name underline" 
+            <!-- Serious -->
+            <div class="link-container serious"><a class="link-name underline" 
                     style="--color: var(--background-blue); --border-size: 3px;" href="index.html#about">
                     About</a> </div>
-            <div class="link-container"><a class="link-name underline" 
+            <div class="link-container serious"><a class="link-name underline" 
                     style="--color: var(--background-blue); --border-size: 3px;" href="index.html#experience">
                     Experience</a> </div>
-            <div class="link-container"><a class="link-name underline" 
+            <div class="link-container serious"><a class="link-name underline" 
                     style="--color: var(--background-blue); --border-size: 3px;" href="index.html#projects">
                     Project</a> </div>
-            <div class="link-container"><a class="link-name underline" 
+            <div class="link-container serious"><a class="link-name underline" 
                     style="--color: var(--background-blue); --border-size: 3px;" href="index.html#contact">
+                    Contact Me</a> </div>
+
+                     <!-- Meme -->
+            <div class="link-container meme"><a class="link-name underline " 
+                    style="--color: var(--background-blue); --border-size: 3px;" href="index.html#about-meme">
+                    About</a> </div>
+            <div class="link-container meme"><a class="link-name underline " 
+                    style="--color: var(--background-blue); --border-size: 3px;" href="index.html#skill-meme">
+                    Skill</a> </div>
+            <div class="link-container meme"><a class="link-name underline " 
+                    style="--color: var(--background-blue); --border-size: 3px;" href="index.html#contact-meme">
                     Contact Me</a> </div>
 
             <div><a class="resume-link" href=#>Resume</a></div>
         </nav>
     </header>
-    <script src="index.js"></script>
-      
-
-
-    <main>
-        <section id="home">
-            <h4 class="home-title">Hi, i am</h4>
-            <h2 class="home-name">Kuncung,</h2>
-            <h3 class="home-subtitle">an aspiring programmer!</h3>
-            <p class="home-description">I am a <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;" >mechatronic engineering</span> graduate, currently developing my skill in programing.
-                                        I found enjoyment in process of learning and solving problems. 
-                                        My goal is to be a <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">full-stack-developer</span> and create a fully functional meme app one day.
-            </p>
-        </section>
-
-        <section id="about">
-            <h2 class="about-title">
-                About Me
-            </h2>
-
-            <div class="about-container">
-               <div class="about-content">
-                    <div class="about-text">
-                        <p>My name is <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Ricko Wijaya</span>, 
-                            from Indonesia, have always been fascinated in computer technology 
-                            since 12 years old. My interest in programming started when 
-                            I took Programming (C++) for Engineers in university.
-                            And it was 2 years later that I actually used programming 
-                            in my internship.
-                        </p>
-
-                        <p>Since then, I started to learn <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Python</span> 
-                            properly and have built some python-based mini projects like a <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Music Discord Bot</span>, 
-                            <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Password Manager App</span>, 
-                            and <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Mandarin-English Flash Card App</span>. 
-                            My main focus these days is to dwell into the world of 
-                            <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Web Development</span>.
-                        </p>
-
-                        <p>So here are some technologies I've been working with recently.</p>
-                    </div>
-
-                    <ul class="about-tech">
-                        <li>Python</li>
-                        <li>Tkinter-Python</li>
-                        <li>HTML-CSS</li>
-                        <li>TailwindCSS</li>
-                    </ul>
-               </div>
-                  
-               <div class="about-image">
-                    <img src="assets/profile-picture.jpeg" alt="profile">
-               </div> 
-
-            </div>
-        </section>
-
-        <section id="experience">
-            <h2 class="experience-title">
-                Where I've worked
-            </h2>
-            <div class="experience-container">
-                <div class="experience-card">
-                    <h3 class="experience-role">
-                        <span>R&D - Educator</span>
-                        @
-                        <span>
-                            <a class="underline experience-company"
-                                style="--color: var(--primary-green); 
-                                        --border-size: 1.5px;"
-                                target="_blank"
-                                href="https://www.raspisekolah.com/">
-                                Raspi Sekolah
-                            </a> 
-                        </span>
-                    </h3>
-                    <p class="experience-date">Sept 2019 - December 2019</p>
-                        <ul class="experience-about">
-                            <li>Designed learning materials and 
-                                organized syllabus for progressive learning</li>
-                            <li>Researched how a technology works and simplified
-                                the theory in a way that students could understand</li>
-                            <li>Prepared all the materials needed,
-                                built the project prototype.</li>
-                            <li>Conducted lessons on the subject of pre-built 
-                                syllabus with Scratch programming, 
-                                and basic engineering</li>
-                            <li>Trained new employee on how to build learning
-                                materials, prototyping, and conduct the class.</li>
-                        </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2 class="projects-title">
-                Some Things I've Built
-            </h2>
-            
-            
-            <div class="projects-cards">
-                <div class="projects-card">
-                    <div class="card-image">
-                        <img class="img1" 
-                            src="assets/discord-bot-icon.png" 
-                            alt="discord-bot-icon">
-                        <img class="img2" 
-                            src="assets/discord-bot-icon-large.png" 
-                            alt="discord-bot-icon">
-                    </div>
-                    <div class="card-container">
-                        <p class="highlight">Featured Project</p>
-                        <h3 class="card-title">Discord Music Bot</h3>
-
-                        <p class="card-description">Plays music on command in voice chats from Youtube, built by using Python</p>
-
-                        <ul class="card-technologies">
-                            <li>Python</li>
-                            <li>Discord</li>
-                            <li>Spotify API</li>
-                            <li>Youtube API</li>
-                        </ul>
-
-                        <div class="card-links">
-                            <a target="_blank" href="https://github.com/kuncung38/kuncung-bot">
-                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <title>GitHub</title>
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="projects-card">
-                    <div class="card-image">
-                        <img src="https://raw.githubusercontent.com/kuncung38/Tkinter-Password-Manager-Kuncung/main/padlock.png" 
-                        alt="padlock-icon">
-                    </div>
-                    <div class="card-container">
-                        <p class="highlight">Featured Project</p>
-                        <h3 class="card-title">Password Manager</h3>
-
-                        <p class="card-description">Account manager with GUI, data is stored locally in json file, build by using Python and Tkinter</p>
-
-                        <ul class="card-technologies">
-                            <li>Python</li>
-                            <li>Tkinter</li>
-                            <li>json</li>
-                        </ul>
-
-                        <div class="card-links">
-                            <a target="_blank" href="https://github.com/kuncung38/Tkinter-Password-Manager-Kuncung">
-                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <title>GitHub</title>
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="projects-card">
-                    <div class="card-image fc">
-                        <img src="assets/flash-card-snap.PNG" alt="discord-bot-icon">
-                    </div>
-                    <div class="card-container">
-                        <p class="highlight">Featured Project</p>
-                        <h3 class="card-title">Mandarin-English Flash Card</h3>
-
-                        <p class="card-description">A learning tool to help user memorize 900 common Mandarin vocabulary.</p>
-
-                        <ul class="card-technologies">
-                            <li>Python</li>
-                            <li>Tkinter</li>
-                            <li>Pandas</li>
-                        </ul>
-
-                        <div class="card-links">
-                            <a target="_blank" href="https://github.com/kuncung38/Tkinter-Mandarin-Flashcard">
-                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <title>GitHub</title>
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </section>
-
-        <section id="contact">
-            <h2 class="contact-title">
-                Contact Me!
-            </h2>
-
-            <div class="contact-container">
-                <div class="contact-content">
-                    <h3>Get In Touch</h3>
-                    <p>Currently open to any opportunity,
-                        or if you just need a friend to talk with,
-                        don't be shy to reach me out.
-                    </p>
-                </div>
-
-                <div class="contact-cta">
-                    <a href="mailto:rickowijaya@gmail.com">Say hello!</a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <ul class="footer-socials">
-            <li class="social-item">
-                <a class="social-link" href="https://wa.me/601128972157" target="_blank">
-                    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 448 512">
-                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
-                    </svg>
-                </a>
-            </li>
-
-            <li class="social-item">
-                <a class="social-link" href="https://www.instagram.com/rickowijaya38/" target="_blank">
-                    <svg class="social-icon"xmlns="http://www.w3.org/2000/svg" 
-                    x="0px" y="0px"
-                    width="32" height="32"
-                    viewBox="0 0 32 32">
-                    <path d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z"></path>
-                    </svg>
-                </a>
-            </li>
-
-            <li class="social-item">
-                <a class="social-link" href="https://www.linkedin.com/in/ricko-wijaya-256a5b14b/" target="_blank">
-                    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 448 512">
-                        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-
-        <div>
-            <small>Designed & Built by Ricko Wijaya</small>
-        </div>
-    </footer>
     
+
+
+    <section class="first-section" id="top-page">
+        <h1 class="opening-title">Welcome,</h1>
+            <h1 class="opening-title">I am Kuncung!</h1>
+        <h5 class="opening-subtitle">What do you come for?</h5>
+        <div class="first-choice">
+            <div class="choices for-serious">
+                <a href="javascript:show()"
+                    id="serious-choice">
+                About me</a>
+            </div>
+            <div class="choices for-meme">
+                <a  href="javascript:meme()"
+                    id="meme-choice">
+                I am here for me(me)</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="second-section">
+    <main>
+        <section class="seriousSection" id="serious">
+            
+            <section id="home">
+                <h4 class="home-title">Hi, i am</h4>
+                <h2 class="home-name">Ricko Wijaya,</h2>
+                <h3 class="home-subtitle">an aspiring programmer!</h3>
+                <p class="home-description">I am a <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;" >mechatronic engineering</span> graduate, currently developing my skill in programing.
+                                            I found enjoyment in process of learning and solving problems. 
+                                            My goal is to be a <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">full-stack-developer</span> and create a fully functional meme app one day.
+                </p>
+            </section>
+
+            <section id="about">
+                <h2 class="about-title">
+                    About Me
+                </h2>
+    
+                <div class="about-container">
+                   <div class="about-content">
+                        <div class="about-text">
+                            <p>My name is <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Ricko Wijaya</span>, 
+                                from Indonesia, have always been fascinated with computer technology 
+                                since 12 years old. My interest in programming started when 
+                                I took Programming (C++) for Engineers in university.
+                                And it was 2 years later that I actually used programming 
+                                in my internship.
+                            </p>
+    
+                            <p>Since then, I started to learn <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Python</span> 
+                                properly and have built some python-based mini projects like a <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Music Discord Bot</span>, 
+                                <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Password Manager App</span>, 
+                                and <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Mandarin-English Flash Card App</span>. 
+                                My main focus these days is to dwell into the world of 
+                                <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Web Development</span>.
+                            </p>
+    
+                            <p>So here are some technologies I've been working with recently.</p>
+                        </div>
+    
+                        <ul class="about-tech">
+                            <li>Python</li>
+                            <li>Tkinter-Python</li>
+                            <li>HTML-CSS</li>
+                            <li>TailwindCSS</li>
+                        </ul>
+                   </div>
+                      
+                   <div class="about-image">
+                        <img src="assets/profile-picture.jpeg" alt="profile">
+                   </div> 
+    
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2 class="experience-title">
+                    Where I've worked
+                </h2>
+                <div class="experience-container">
+                    <div class="experience-card">
+                        <h3 class="experience-role">
+                            <span>R&D - Educator</span>
+                            @
+                            <span>
+                                <a class="underline experience-company"
+                                    style="--color: var(--primary-green); 
+                                            --border-size: 1.5px;"
+                                    target="_blank"
+                                    href="https://www.raspisekolah.com/">
+                                    Raspi Sekolah
+                                </a> 
+                            </span>
+                        </h3>
+                        <p class="experience-date">Sept 2019 - December 2019</p>
+                            <ul class="experience-about">
+                                <li>Designed learning materials and 
+                                    organized syllabus for progressive learning</li>
+                                <li>Researched how a technology works and simplified
+                                    the theory in a way that students could understand</li>
+                                <li>Prepared all the materials needed,
+                                    built the project prototype.</li>
+                                <li>Conducted lessons on the subject of pre-built 
+                                    syllabus with Scratch programming, 
+                                    and basic engineering</li>
+                                <li>Trained new employee on how to build learning
+                                    materials, prototyping, and conduct the class.</li>
+                            </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="projects">
+                <h2 class="projects-title">
+                    Some Things I've Built
+                </h2>
+                
+                
+                <div class="projects-cards">
+                    <div class="projects-card">
+                        <div class="card-image">
+                            <img class="img1" 
+                                src="assets/discord-bot-icon.png" 
+                                alt="discord-bot-icon">
+                            <img class="img2" 
+                                src="assets/discord-bot-icon-large.png" 
+                                alt="discord-bot-icon">
+                        </div>
+                        <div class="card-container">
+                            <p class="highlight">Featured Project</p>
+                            <h3 class="card-title">Discord Music Bot</h3>
+    
+                            <p class="card-description">Plays music on command in voice chats from Youtube, built by using Python</p>
+    
+                            <ul class="card-technologies">
+                                <li>Python</li>
+                                <li>Discord</li>
+                                <li>Spotify API</li>
+                                <li>Youtube API</li>
+                            </ul>
+    
+                            <div class="card-links">
+                                <a target="_blank" href="https://github.com/kuncung38/kuncung-bot">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <title>GitHub</title>
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="projects-card">
+                        <div class="card-image">
+                            <img src="https://raw.githubusercontent.com/kuncung38/Tkinter-Password-Manager-Kuncung/main/padlock.png" 
+                            alt="padlock-icon">
+                        </div>
+                        <div class="card-container">
+                            <p class="highlight">Featured Project</p>
+                            <h3 class="card-title">Password Manager</h3>
+    
+                            <p class="card-description">Account manager with GUI, data is stored locally in json file, build by using Python and Tkinter</p>
+    
+                            <ul class="card-technologies">
+                                <li>Python</li>
+                                <li>Tkinter</li>
+                                <li>json</li>
+                            </ul>
+    
+                            <div class="card-links">
+                                <a target="_blank" href="https://github.com/kuncung38/Tkinter-Password-Manager-Kuncung">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <title>GitHub</title>
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="projects-card">
+                        <div class="card-image fc">
+                            <img src="assets/flash-card-snap.PNG" alt="discord-bot-icon">
+                        </div>
+                        <div class="card-container">
+                            <p class="highlight">Featured Project</p>
+                            <h3 class="card-title">Mandarin-English Flash Card</h3>
+    
+                            <p class="card-description">A learning tool to help user memorize 900 common Mandarin vocabulary.</p>
+    
+                            <ul class="card-technologies">
+                                <li>Python</li>
+                                <li>Tkinter</li>
+                                <li>Pandas</li>
+                            </ul>
+    
+                            <div class="card-links">
+                                <a target="_blank" href="https://github.com/kuncung38/Tkinter-Mandarin-Flashcard">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <title>GitHub</title>
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </section>
+    
+            <section id="contact">
+                <h2 class="contact-title">
+                    Contact Me!
+                </h2>
+    
+                <div class="contact-container">
+                    <div class="contact-content">
+                        <h3>Get In Touch</h3>
+                        <p>Currently open to any opportunity,
+                            or if you just need a friend to talk with,
+                            don't be shy to reach me out.
+                        </p>
+                    </div>
+    
+                    <div class="contact-cta">
+                        <a href="mailto:rickowijaya@gmail.com">Say hello!</a>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="memeSection">
+    
+            <section id="home-meme">
+                <h4 class="home-title">Hi, i am</h4>
+                <h2 class="home-name">Ricko Wijaya,</h2>
+                <h3 class="home-subtitle">an aspiring programmer!</h3>
+                <p class="home-description">I am a <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;" >mechatronic engineering</span> 
+                                            graduate, what is pentatoni.. *ehem mechatronic, you ask?
+                                            Well.. It is an engineering branch that covered mechanical, electronic
+                                            and computer in 4 years. Jack of three trades, master of none. 
+                                            After graduating, I have more interest in the computer side compared to the other two.
+                                            So here I am learning more on the programming side, specifically 
+                                            <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">
+                                            full-stack-developer</span> and create a fully functional meme app one day.
+                                            
+                </p>
+            </section>
+
+            
+            <section id="about-meme">
+                <h2 class="about-title">
+                    About Me
+                </h2>
+    
+                <div class="about-container">
+                   <div class="about-content">
+                        <div class="about-text">
+                            <p>I have always better known more as <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Kuncung</span>, 
+                               my nick name and username in any account. First time i heard the term internet was when 
+                                i was 12 years old, on year 2009, quite late for my generation, but i got hooked right away. 
+                                Oh yeah, I am something of a nerd myself. Aside of computer technology, 
+                                I have always been interested in basketball and video games,
+                                even though interestingly I don't have a strong interest in watching the pro players. 
+                                
+                            </p>
+    
+                            <p>Anyway, lets talk about my programming journey, I started to learn <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Python</span> 
+                                just because I wanted to create my own <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Music Discord Bot</span>, 
+                                and ended up learning python properly in Udemy, creating a few mini-project like <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">
+                                Password Manager App</span>, and <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Mandarin-English Flash Card App</span>. 
+                                For now, I am going to focus on 
+                                <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">Web Development</span>.
+                                For links to my projects, it is available in the more serious section :3 .
+                            </p>
+    
+                            <p>So here are some technologies I've been working with recently.</p>
+                        </div>
+    
+                        <ul class="about-tech">
+                            <li>Python</li>
+                            <li>Tkinter-Python</li>
+                            <li>HTML-CSS</li>
+                            <li>TailwindCSS</li>
+                        </ul>
+                   </div>
+                      
+                   <div class="about-image">
+                        <img src="assets/profile-picture-meme.jpeg" alt="profile">
+                   </div> 
+    
+                </div>
+            </section>
+
+            <section id="skill-meme">
+                <h2 class="skill-title">
+                    My special skill
+                </h2>
+                <div class="skill-container">
+                    <div class="skill-card">
+                        <div class="skill-image">
+                            <img id="good-listener-pic" 
+                                src="assets/good-listener.png" 
+                                alt="good-listener">
+                       </div>
+                        <div class="skill-text">
+                            <h3 class="skill-type">
+                                <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">
+                                    Good Listener
+                                </span>
+                            </h3>
+                            <p class="skill-about">
+                                As i am a quiet and good kid, i enjoy receiving people's thought more than spilling my own. 
+                                Soo.. Got something to say? Let it out to me, I will listen and nod gracefully.  
+                            </p>
+                        </div> 
+                    </div>
+
+                    <div class="skill-card bullshit-card">
+                        <div class="skill-image">
+                            <img id="bullshit-pic" 
+                                src="assets/bullshit-icon.svg" 
+                                alt="shitting-bull">
+                       </div> 
+                       <div class="skill-text">
+                            <h3 class="skill-type">
+                                <span class="highlight underline" style="--color: var(--primary-green); --border-size: 1.5px;">
+                                    Bullshit Dealer
+                                </span>
+                            </h3>
+                            <p class="skill-about">
+                                Receiving and giving useful information is the best thing 
+                                human could do. But it is boring, so a few bullshit here and 
+                                there can liven up our lives. As this is an important aspect 
+                                of life, i learnt a few things about this majestic skill.
+                                Yess, if you like to listen to or spew some bullshit, 
+                                you can involve me.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="contact-meme">
+                <h2 class="contact-title">
+                    Contact Me!
+                </h2>
+    
+                <div class="contact-container">
+                    <div class="contact-content">
+                        <h3>Get In Touch</h3>
+                        <p>Need some friends? 
+                            Wanna talk about how hard programming life,
+                            or any kind of life is?
+                            Or if you just need someone to listen
+                            to your bullshit, sign me up!
+                        </p>
+                    </div>
+    
+                    <div class="contact-cta">
+                        <a href="mailto:rickowijaya@gmail.com">Say hello!</a>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+   
+
+        <footer>
+            <ul class="footer-socials">
+                <li class="social-item">
+                    <a class="social-link" href="https://wa.me/601128972157" target="_blank">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 448 512">
+                            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+                        </svg>
+                    </a>
+                </li>
+    
+                <li class="social-item">
+                    <a class="social-link" href="https://www.instagram.com/rickowijaya38/" target="_blank">
+                        <svg class="social-icon"xmlns="http://www.w3.org/2000/svg" 
+                        x="0px" y="0px"
+                        width="32" height="32"
+                        viewBox="0 0 32 32">
+                        <path d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z"></path>
+                        </svg>
+                    </a>
+                </li>
+    
+                <li class="social-item">
+                    <a class="social-link" href="https://www.linkedin.com/in/ricko-wijaya-256a5b14b/" target="_blank">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 448 512">
+                            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+    
+            <div>
+                <small>Designed & Built by Ricko Wijaya</small>
+            </div>
+        </footer>
+    
+    </main>
+    </div>
+
 </body>
 </html>

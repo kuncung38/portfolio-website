@@ -1,10 +1,11 @@
+/* -------------------- Experience---------------- */
 #experience {
     display:flex;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
     margin-top: 20rem;
-    scroll-margin-top: 3rem;
+    scroll-margin-top: 8rem;
 }
 
 .experience-title {
@@ -60,6 +61,9 @@
 
 
 @media (min-width:640px) {
+    #experience {
+        scroll-margin-top: 5rem;
+    }
     .experience-title {
         font-size: var(--text-2xl);
     }
@@ -68,6 +72,7 @@
 @media (min-width:768px) {
     #experience {
         margin-top: 20rem;
+        scroll-margin-top: 2rem;
     }
     
     .experience-title {

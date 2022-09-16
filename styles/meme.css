@@ -1,0 +1,129 @@
+/* ---------------------------------------- Meme-Section------------------------------------ */
+.memeSection {
+    display: none;
+}
+
+.meme {
+    display: none;
+}
+
+/* -------------------- Skill-meme---------------- */
+#skill-meme {
+    display:flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40rem;
+    scroll-margin-top: 24rem;
+}
+
+.skill-title {
+    display:flex;
+    align-items: center;
+    color:var(--secondary-gray);
+    font-size: var(--text-xl);
+    font-weight: 600;
+}
+
+.skill-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    margin-top:2.5rem;
+}
+
+.skill-card {
+    border: 1px solid #374151;
+    cursor: pointer;
+    border-radius:0.3rem;
+    padding: 2.5rem 2.5rem 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-text {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.skill-type {
+    color:var(--secondary-gray);
+    font-size: var(--text-lg);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.skill-image {
+    width:16rem;
+    height: 16rem;
+}
+
+.skill-image > #good-listener-pic {
+    width: 100%;
+    height: 80%;
+    border-radius: 0.5rem;
+}
+
+.skill-image > #bullshit-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.skill-about {
+    margin-top: 1rem;
+}
+
+@media (min-width:640px) {
+    #skill-meme {
+        scroll-margin-top: 5rem;
+    }
+    .skill-title {
+        font-size: var(--text-2xl);
+    }
+}
+
+@media (min-width:768px) {
+    #skill-meme {
+        margin-top: 20rem;
+        scroll-margin-top: 2rem;
+    }
+    
+    .skill-title {
+        font-size: var(--text-3xl);
+    }
+
+    .skill-type {
+        font-size: var(--text-xl);
+    }
+    
+}
+
+@media(min-width: 1024px) {
+    #skill-meme {
+        margin-bottom: 14rem;
+        scroll-margin-top: 10rem;
+    }
+    .skill-type {
+        font-size: var(--text-2xl);
+    }
+    .skill-card {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .skill-card > * {
+        margin: auto 2rem;
+    }
+    .skill-text {
+        max-width: 25rem;
+    }
+
+    .bullshit-card {
+        flex-direction: row-reverse;
+    }
+    
+}

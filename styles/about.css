@@ -1,11 +1,16 @@
-#about {
+#about, #about-meme {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
     
-    margin-top: 10rem;
-    scroll-margin-top: 3rem;
+    margin-top: 15rem;
+    scroll-margin-top: 15rem;
+}
+
+#about-meme {
+    margin-top: 20rem;
+    scroll-margin-top: 23rem;
 }
 
 .about-title {
@@ -64,6 +69,12 @@
 
 .about-image > img {
     width: 100%;
+    height: 90%;
+    border-radius: 0.5rem;
+}
+
+#about-meme .about-image > img {
+    width: 100%;
     height: 100%;
     border-radius: 0.5rem;
 }
@@ -81,8 +92,12 @@
 }
 
 @media(min-width: 768px) {
-    #about {
+    #about, #about-meme {
         margin-bottom: 13rem;
+        scroll-margin-top: 5rem;
+    }
+    #about-meme {
+        scroll-margin-top: 8rem;
     }
     
     .about-container {
@@ -99,6 +114,8 @@
     .about-title {
         font-size: var(--text-3xl);
     }
+
+    
 }
 
 @media(min-width: 1024px) {

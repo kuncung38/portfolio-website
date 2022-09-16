@@ -14,7 +14,12 @@
     --text-6xl: 3.75rem;
     --text-7xl: 4.5rem;
     --text-8xl: 5.5rem;
+}
 
+html,
+body, h1{
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -27,9 +32,9 @@ html {
 body {
     background-color: var(--background-blue);
     color: #8892b0;
-    margin: 0;
     position:relative;
 }
+
 
 .highlight {
     color: var(--primary-green);
@@ -51,7 +56,7 @@ body {
 
 main {
     max-width: 24rem;
-    margin: 3rem auto;
+    margin: 3rem auto 0;
     padding: 0 1rem;
 }
 
