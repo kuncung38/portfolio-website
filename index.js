@@ -1,3 +1,9 @@
+var x = document.getElementById('second-section');
+var memeSection = document.getElementsByClassName("memeSection");
+var seriousSection = document.getElementsByClassName("seriousSection");
+var meme = document.getElementsByClassName("meme");
+var serious = document.getElementsByClassName("serious");
+
 window.addEventListener("scroll", function(e) {
     if (window.scrollY > (window.innerHeight-100)) {
         document.getElementById('navbar').style.display = 'flex';
@@ -11,24 +17,22 @@ function toggleMobileMenu(menu)  {
 }
 
 function show() {
-    var x = document.getElementById('second-section');
-    console.log("clicked")
     x.style.display = 'block';
-    window.location.href = "index.html#home";
+
+    Array.from(memeSection).forEach(memeSection => memeSection.style.display = 'none');
+    Array.from(seriousSection).forEach(seriousSection => seriousSection.style.display = 'block');
+    Array.from(meme).forEach(meme => meme.style.display = 'none');
+    Array.from(serious).forEach(serious => serious.style.display = 'flex');
+    window.location.href = "#home";
   }
 
-function meme() {
-    var x = document.getElementById('second-section');
+function showMeme() {
     x.style.display = 'block';
-    
-    var memeSection = document.getElementsByClassName("memeSection");
-    var seriousSection = document.getElementsByClassName("seriousSection");
-    var meme = document.getElementsByClassName("meme");
-    var serious = document.getElementsByClassName("serious");
 
     Array.from(memeSection).forEach(memeSection => memeSection.style.display = 'block');
     Array.from(seriousSection).forEach(seriousSection => seriousSection.style.display = 'none');
     Array.from(meme).forEach(meme => meme.style.display = 'flex');
     Array.from(serious).forEach(serious => serious.style.display = 'none');
-    window.location.href = "index.html#home-meme";
+    console.log("no problem till here")
+    window.location.href = "#home-meme";
 }

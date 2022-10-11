@@ -69,9 +69,12 @@
 
 /* For Small Laptop view */
 @media (min-width:1024px) {
-    #home {
+    #home, #home-meme {
         height: 100vh;
-        scroll-margin-top: 1rem;
+        margin-top: 0rem;
+        /* scroll-snap-align: end; */
+        scroll-margin-top: 0rem;
+        scroll-margin-bottom: 2rem;
     }
     
     .home-title {
@@ -107,7 +110,7 @@
     }
     
     .home-title {
-        margin-top: 6rem;
+        margin-top: 2.5rem;
         margin-bottom: 1rem;
         font-size: var(--text-3xl);
     }

@@ -119,7 +119,8 @@
 }
 
 @media(min-width: 1024px) {
-    #about {
+    #about, #about-meme {
         margin-bottom: 14rem;
+        scroll-margin-top: 2rem;
     }
 }
