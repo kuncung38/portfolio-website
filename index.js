@@ -23,7 +23,7 @@ function show() {
     Array.from(seriousSection).forEach(seriousSection => seriousSection.style.display = 'block');
     Array.from(meme).forEach(meme => meme.style.display = 'none');
     Array.from(serious).forEach(serious => serious.style.display = 'flex');
-    window.location.href = "index.html#home";
+    window.location.href = "#home";
   }
 
 function showMeme() {
@@ -34,5 +34,5 @@ function showMeme() {
     Array.from(meme).forEach(meme => meme.style.display = 'flex');
     Array.from(serious).forEach(serious => serious.style.display = 'none');
     console.log("no problem till here")
-    window.location.href = "index.html#home-meme";
+    window.location.href = "#home-meme";
 }
