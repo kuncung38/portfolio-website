@@ -33,6 +33,25 @@ function showMeme() {
     Array.from(seriousSection).forEach(seriousSection => seriousSection.style.display = 'none');
     Array.from(meme).forEach(meme => meme.style.display = 'flex');
     Array.from(serious).forEach(serious => serious.style.display = 'none');
-    console.log("no problem till here")
     window.location.href = "#home-meme";
 }
+
+document.querySelectorAll('.home-name-text').forEach(function(el) {
+    new Typed(el, {
+        strings: ['Ricko Wijaya,', 'an aspiring developer!' ],
+        loop : true,
+        typeSpeed : 100,
+        backSpeed : 80,
+        startDelay : 100,
+        backDelay : 1500,
+    })
+})
+
+var secondLoop = new Typed('.second-typing', {
+    strings: ['metatro,', 'mercato', 'pentatoni', 'fucthishi','mechatronic engineering^1000'],
+    loop : true,
+    typeSpeed : 30,
+    backSpeed : 20,
+    startDelay : 100,
+    backDelay : 0,  
+})

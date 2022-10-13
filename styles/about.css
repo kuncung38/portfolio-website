@@ -5,12 +5,12 @@
     height: 100vh;
     
     margin-top: 15rem;
-    scroll-margin-top: 15rem;
+    scroll-margin-top: 20rem;
 }
 
 #about-meme {
     margin-top: 20rem;
-    scroll-margin-top: 23rem;
+    scroll-margin-top: 25rem;
 }
 
 .about-title {
