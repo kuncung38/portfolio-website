@@ -40,10 +40,10 @@ document.querySelectorAll('.home-name-text').forEach(function(el) {
     new Typed(el, {
         strings: ['Ricko Wijaya,', 'an aspiring developer!' ],
         loop : true,
-        typeSpeed : 100,
-        backSpeed : 80,
+        typeSpeed : 50,
+        backSpeed : 40,
         startDelay : 100,
-        backDelay : 1500,
+        backDelay : 1000,
     })
 })
 
