@@ -53,5 +53,15 @@ var secondLoop = new Typed('.second-typing', {
     typeSpeed : 30,
     backSpeed : 20,
     startDelay : 100,
-    backDelay : 0,  
+    backDelay : 0,
+    preStringTyped: (arrayPos, self) => {
+        if (arrayPos === 3) {
+            self.typeSpeed = 10;
+            self.backSpeed = 10;
+        }
+        else {
+            self.typeSpeed = 30;
+            self.backSpeed = 20;
+        }
+    }
 })
